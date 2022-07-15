@@ -33,15 +33,15 @@ Partial Class Form1
         Me.llnLabel = New System.Windows.Forms.Label()
         Me.emailaLabel = New System.Windows.Forms.Label()
         Me.fName = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.lName = New System.Windows.Forms.TextBox()
+        Me.address = New System.Windows.Forms.TextBox()
+        Me.cpNumber = New System.Windows.Forms.TextBox()
+        Me.llNumber = New System.Windows.Forms.TextBox()
+        Me.emailAddress = New System.Windows.Forms.TextBox()
         Me.fullName = New System.Windows.Forms.Label()
         Me.educTitleLabel = New System.Windows.Forms.Label()
         Me.highSchoolTitleLabel = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.hsName = New System.Windows.Forms.TextBox()
         Me.yrhsEnd = New System.Windows.Forms.Label()
         Me.collegeTitleLabel = New System.Windows.Forms.Label()
         Me.hsLabel = New System.Windows.Forms.Label()
@@ -177,50 +177,50 @@ Partial Class Form1
         Me.fName.Size = New System.Drawing.Size(547, 26)
         Me.fName.TabIndex = 10
         '
-        'TextBox1
+        'lName
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.LavenderBlush
-        Me.TextBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.TextBox1.Location = New System.Drawing.Point(174, 162)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(547, 26)
-        Me.TextBox1.TabIndex = 11
+        Me.lName.BackColor = System.Drawing.Color.LavenderBlush
+        Me.lName.Font = New System.Drawing.Font("Times New Roman", 12.0!)
+        Me.lName.Location = New System.Drawing.Point(174, 162)
+        Me.lName.Name = "lName"
+        Me.lName.Size = New System.Drawing.Size(547, 26)
+        Me.lName.TabIndex = 11
         '
-        'TextBox2
+        'address
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.LavenderBlush
-        Me.TextBox2.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.TextBox2.Location = New System.Drawing.Point(174, 197)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(547, 26)
-        Me.TextBox2.TabIndex = 12
+        Me.address.BackColor = System.Drawing.Color.LavenderBlush
+        Me.address.Font = New System.Drawing.Font("Times New Roman", 12.0!)
+        Me.address.Location = New System.Drawing.Point(174, 197)
+        Me.address.Name = "address"
+        Me.address.Size = New System.Drawing.Size(547, 26)
+        Me.address.TabIndex = 12
         '
-        'TextBox3
+        'cpNumber
         '
-        Me.TextBox3.BackColor = System.Drawing.Color.LavenderBlush
-        Me.TextBox3.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.TextBox3.Location = New System.Drawing.Point(174, 231)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(547, 26)
-        Me.TextBox3.TabIndex = 13
+        Me.cpNumber.BackColor = System.Drawing.Color.LavenderBlush
+        Me.cpNumber.Font = New System.Drawing.Font("Times New Roman", 12.0!)
+        Me.cpNumber.Location = New System.Drawing.Point(174, 231)
+        Me.cpNumber.Name = "cpNumber"
+        Me.cpNumber.Size = New System.Drawing.Size(547, 26)
+        Me.cpNumber.TabIndex = 13
         '
-        'TextBox4
+        'llNumber
         '
-        Me.TextBox4.BackColor = System.Drawing.Color.LavenderBlush
-        Me.TextBox4.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.TextBox4.Location = New System.Drawing.Point(174, 266)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(547, 26)
-        Me.TextBox4.TabIndex = 14
+        Me.llNumber.BackColor = System.Drawing.Color.LavenderBlush
+        Me.llNumber.Font = New System.Drawing.Font("Times New Roman", 12.0!)
+        Me.llNumber.Location = New System.Drawing.Point(174, 266)
+        Me.llNumber.Name = "llNumber"
+        Me.llNumber.Size = New System.Drawing.Size(547, 26)
+        Me.llNumber.TabIndex = 14
         '
-        'TextBox5
+        'emailAddress
         '
-        Me.TextBox5.BackColor = System.Drawing.Color.LavenderBlush
-        Me.TextBox5.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.TextBox5.Location = New System.Drawing.Point(174, 301)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(547, 26)
-        Me.TextBox5.TabIndex = 15
+        Me.emailAddress.BackColor = System.Drawing.Color.LavenderBlush
+        Me.emailAddress.Font = New System.Drawing.Font("Times New Roman", 12.0!)
+        Me.emailAddress.Location = New System.Drawing.Point(174, 301)
+        Me.emailAddress.Name = "emailAddress"
+        Me.emailAddress.Size = New System.Drawing.Size(547, 26)
+        Me.emailAddress.TabIndex = 15
         '
         'fullName
         '
@@ -252,14 +252,14 @@ Partial Class Form1
         Me.highSchoolTitleLabel.TabIndex = 18
         Me.highSchoolTitleLabel.Text = "High School"
         '
-        'TextBox6
+        'hsName
         '
-        Me.TextBox6.BackColor = System.Drawing.Color.LavenderBlush
-        Me.TextBox6.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.TextBox6.Location = New System.Drawing.Point(149, 421)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(370, 26)
-        Me.TextBox6.TabIndex = 20
+        Me.hsName.BackColor = System.Drawing.Color.LavenderBlush
+        Me.hsName.Font = New System.Drawing.Font("Times New Roman", 12.0!)
+        Me.hsName.Location = New System.Drawing.Point(149, 421)
+        Me.hsName.Name = "hsName"
+        Me.hsName.Size = New System.Drawing.Size(370, 26)
+        Me.hsName.TabIndex = 20
         '
         'yrhsEnd
         '
@@ -484,16 +484,16 @@ Partial Class Form1
         Me.Controls.Add(Me.collegeTitleLabel)
         Me.Controls.Add(Me.yGHS)
         Me.Controls.Add(Me.yrhsEnd)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.hsName)
         Me.Controls.Add(Me.hsLabel)
         Me.Controls.Add(Me.highSchoolTitleLabel)
         Me.Controls.Add(Me.educTitleLabel)
         Me.Controls.Add(Me.fullName)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.emailAddress)
+        Me.Controls.Add(Me.llNumber)
+        Me.Controls.Add(Me.cpNumber)
+        Me.Controls.Add(Me.address)
+        Me.Controls.Add(Me.lName)
         Me.Controls.Add(Me.fName)
         Me.Controls.Add(Me.emailaLabel)
         Me.Controls.Add(Me.llnLabel)
@@ -526,15 +526,15 @@ Partial Class Form1
     Friend WithEvents llnLabel As Label
     Friend WithEvents emailaLabel As Label
     Friend WithEvents fName As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents lName As TextBox
+    Friend WithEvents address As TextBox
+    Friend WithEvents cpNumber As TextBox
+    Friend WithEvents llNumber As TextBox
+    Friend WithEvents emailAddress As TextBox
     Friend WithEvents fullName As Label
     Friend WithEvents educTitleLabel As Label
     Friend WithEvents highSchoolTitleLabel As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents hsName As TextBox
     Friend WithEvents yrhsEnd As Label
     Friend WithEvents collegeTitleLabel As Label
     Friend WithEvents hsLabel As Label
