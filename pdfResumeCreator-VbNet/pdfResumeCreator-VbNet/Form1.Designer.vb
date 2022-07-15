@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.loadJsonButton = New System.Windows.Forms.Button()
         Me.reset = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -62,6 +63,10 @@ Partial Class Form1
         Me.pdfButton = New System.Windows.Forms.Button()
         Me.requiredWorkExperience = New System.Windows.Forms.Label()
         Me.update = New System.Windows.Forms.Label()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.jobTitle = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.companyName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jobDuration = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.workExperience, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -91,10 +96,10 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label1.Font = New System.Drawing.Font("Bookman Old Style", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(206, 51)
+        Me.Label1.Font = New System.Drawing.Font("Bookman Old Style", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(123, 25)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(286, 24)
+        Me.Label1.Size = New System.Drawing.Size(499, 41)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "PERSONAL INFORMATION"
         '
@@ -235,10 +240,10 @@ Partial Class Form1
         '
         Me.educTitleLabel.AutoSize = True
         Me.educTitleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.educTitleLabel.Font = New System.Drawing.Font("Bookman Old Style", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.educTitleLabel.Location = New System.Drawing.Point(206, 361)
+        Me.educTitleLabel.Font = New System.Drawing.Font("Bookman Old Style", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.educTitleLabel.Location = New System.Drawing.Point(123, 350)
         Me.educTitleLabel.Name = "educTitleLabel"
-        Me.educTitleLabel.Size = New System.Drawing.Size(313, 24)
+        Me.educTitleLabel.Size = New System.Drawing.Size(548, 41)
         Me.educTitleLabel.TabIndex = 17
         Me.educTitleLabel.Text = "EDUCATIONAL ATTAINMENT"
         '
@@ -380,10 +385,10 @@ Partial Class Form1
         '
         Me.workingExperienceLabel.AutoSize = True
         Me.workingExperienceLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.workingExperienceLabel.Font = New System.Drawing.Font("Bookman Old Style", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.workingExperienceLabel.Location = New System.Drawing.Point(872, 51)
+        Me.workingExperienceLabel.Font = New System.Drawing.Font("Bookman Old Style", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.workingExperienceLabel.Location = New System.Drawing.Point(789, 25)
         Me.workingExperienceLabel.Name = "workingExperienceLabel"
-        Me.workingExperienceLabel.Size = New System.Drawing.Size(267, 24)
+        Me.workingExperienceLabel.Size = New System.Drawing.Size(456, 41)
         Me.workingExperienceLabel.TabIndex = 32
         Me.workingExperienceLabel.Text = "WORKING EXPERIENCE"
         '
@@ -391,6 +396,7 @@ Partial Class Form1
         '
         Me.workExperience.BackgroundColor = System.Drawing.Color.LavenderBlush
         Me.workExperience.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.workExperience.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.jobTitle, Me.companyName, Me.jobDuration})
         Me.workExperience.Location = New System.Drawing.Point(761, 78)
         Me.workExperience.Name = "workExperience"
         Me.workExperience.Size = New System.Drawing.Size(522, 249)
@@ -442,22 +448,44 @@ Partial Class Form1
         'requiredWorkExperience
         '
         Me.requiredWorkExperience.AutoSize = True
-        Me.requiredWorkExperience.Font = New System.Drawing.Font("Times New Roman", 12.75!, System.Drawing.FontStyle.Bold)
+        Me.requiredWorkExperience.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.requiredWorkExperience.ForeColor = System.Drawing.Color.Red
-        Me.requiredWorkExperience.Location = New System.Drawing.Point(69, 25)
+        Me.requiredWorkExperience.Location = New System.Drawing.Point(48, 25)
         Me.requiredWorkExperience.Name = "requiredWorkExperience"
-        Me.requiredWorkExperience.Size = New System.Drawing.Size(0, 19)
+        Me.requiredWorkExperience.Size = New System.Drawing.Size(0, 24)
         Me.requiredWorkExperience.TabIndex = 38
         '
         'update
         '
         Me.update.AutoSize = True
-        Me.update.Font = New System.Drawing.Font("Times New Roman", 12.75!, System.Drawing.FontStyle.Bold)
+        Me.update.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.update.ForeColor = System.Drawing.Color.Red
         Me.update.Location = New System.Drawing.Point(29, 25)
         Me.update.Name = "update"
-        Me.update.Size = New System.Drawing.Size(0, 19)
+        Me.update.Size = New System.Drawing.Size(0, 24)
         Me.update.TabIndex = 39
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'jobTitle
+        '
+        Me.jobTitle.HeaderText = "Job Title"
+        Me.jobTitle.Name = "jobTitle"
+        Me.jobTitle.Width = 170
+        '
+        'companyName
+        '
+        Me.companyName.HeaderText = "Company Name"
+        Me.companyName.Name = "companyName"
+        Me.companyName.Width = 200
+        '
+        'jobDuration
+        '
+        Me.jobDuration.HeaderText = "Job Duration"
+        Me.jobDuration.Name = "jobDuration"
+        Me.jobDuration.Width = 110
         '
         'Form1
         '
@@ -505,6 +533,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.reset)
         Me.Controls.Add(Me.loadJsonButton)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
@@ -555,4 +584,8 @@ Partial Class Form1
     Friend WithEvents pdfButton As Button
     Friend WithEvents requiredWorkExperience As Label
     Friend WithEvents update As Label
+    Private WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents jobTitle As DataGridViewTextBoxColumn
+    Friend WithEvents companyName As DataGridViewTextBoxColumn
+    Friend WithEvents jobDuration As DataGridViewTextBoxColumn
 End Class
